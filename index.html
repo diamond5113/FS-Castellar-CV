@@ -1,83 +1,172 @@
+```html
 <!-- ========================= -->
+<!-- FITXER: index.html -->
+<!-- ========================= -->
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FS Castellar CV - Inici</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #003366, #0055aa);
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.7rem;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+    }
+
+    nav {
+      background-color: #002244;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 25px;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #0055aa;
+    }
+
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    .hero {
+      text-align: center;
+    }
 
     .hero img {
-      width: 90%;
-      max-width: 1000px;
-      border-radius: 15px;
-      margin-top: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      width: 100%;
+      border-radius: 20px;
+      margin-top: 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .hero h2 {
+      color: #003366;
+      margin-bottom: 15px;
+      font-size: 2rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 900px;
+      margin: auto;
     }
 
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 35px;
     }
 
     .gallery img {
       width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      height: 250px;
+      object-fit: cover;
+      border-radius: 18px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
     }
 
-    iframe {
-      width: 100%;
-      height: 450px;
-      border: none;
-      border-radius: 15px;
-      margin-top: 30px;
+    .gallery img:hover {
+      transform: scale(1.03);
     }
 
     footer {
       background-color: #002244;
       color: white;
       text-align: center;
-      padding: 15px;
+      padding: 20px;
       margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .hero h2 {
+        font-size: 1.6rem;
+      }
     }
   </style>
 </head>
+
 <body>
 
-<header>
-  <h1>FS Castellar CV</h1>
-  <p>Club de Voleibol</p>
-</header>
+  <header>
+    <h1>FS Castellar CV</h1>
+    <p>Passió pel futbol sala i el treball en equip</p>
+  </header>
 
-<nav>
-  <a href="index.html">Inici</a>
-  <a href="quisom.html">Qui Som</a>
-  <a href="contacte.html">Contacte</a>
-</nav>
+  <nav>
+    <a href="index.html">Inici</a>
+    <a href="programacio.html">Programació</a>
+    <a href="equips.html">Equips</a>
+    <a href="contacte.html">Contacte</a>
+  </nav>
 
-<!-- Cada apartat funciona com una pàgina HTML independent -->
-
-<section>
-  <div class="hero">
+  <section class="hero">
     <h2>Benvinguts al FS Castellar CV</h2>
-    <p>Passió pel voleibol i esperit d'equip.</p>
 
-    <img src="https://www.lactual.cat/uploads/s1/82/79/67/img-7150_20_1440x961.jpeg" alt="FS Castellar CV principal">
-  </div>
+    <p>
+      El FS Castellar CV és un club dedicat a fomentar el futbol sala,
+      els valors esportius i la convivència entre jugadors de totes les edats.
+      Descobreix les nostres activitats, equips i programació.
+    </p>
 
-  <h2 style="margin-top:40px;">Galeria</h2>
+    <img src="https://www.lactual.cat/uploads/s1/82/79/67/img-7150_20_1440x961.jpeg" alt="FS Castellar">
 
-  <div class="gallery">
-    <img src="https://www.castellarvalles.cat/arxius/multimedia/22773/imatge/voleibol(542).jpg" alt="Equip FS Castellar CV 1">
-    <img src="https://i0.wp.com/voleimasters.cat/lliga/wp-content/uploads/2020/02/photo_2020-02-27_11-44-19.jpg?fit=1200%2C900&ssl=1" alt="Equip FS Castellar CV 2">
-    <img src="https://www.lactual.cat/uploads/s1/63/34/74/asa4501_20_1440x961.jpeg" alt="Equip FS Castellar CV 3">
-  </div>
+    <div class="gallery">
+      <img src="https://www.lactual.cat/uploads/s1/82/79/67/img-7150_20_1440x961.jpeg" alt="Partit FS Castellar">
 
-  <h2 style="margin-top:40px;">Ubicació</h2>
+      <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=1200&auto=format&fit=crop" alt="Entrenament futbol sala">
 
-  <iframe src="https://www.google.com/maps?q=41.6142779,2.0915264&z=17&output=embed"></iframe>
-</section>
+      <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=1200&auto=format&fit=crop" alt="Equip futbol sala">
 
-<footer>
-  <p>© 2026 FS Castellar CV</p>
-</footer>
+      <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1200&auto=format&fit=crop" alt="Pavelló esportiu">
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 FS Castellar CV - Tots els drets reservats</p>
+  </footer>
 
 </body>
 </html>
-
+```
