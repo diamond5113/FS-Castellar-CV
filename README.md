@@ -1,4 +1,3 @@
-# FS-Castellar-CV
 <!DOCTYPE html>
 <html lang="ca">
 <head>
